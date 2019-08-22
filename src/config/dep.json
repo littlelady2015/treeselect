@@ -31,6 +31,16 @@
         "hasChildrenDisabled": false
       },
       {
+        "departmentId": 240535,
+        "departmentName": "02",
+        "departmentCode": "15205",
+        "parentDepartmentId": -1,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": false
+      },
+      {
         "departmentId": 240534,
         "departmentName": "测试",
         "departmentCode": "15204",
@@ -70,5 +80,5 @@
         "hasChildrenEnable": true,
         "hasChildrenDisabled": true
       }
-    ]
+   ]
 }

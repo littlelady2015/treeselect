@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Department from "./components";
+import React, { Component } from 'react';
+import Department from './components';
 import DATA from './config/dep.json';
 
 export default class extends Component {
@@ -8,12 +8,24 @@ export default class extends Component {
     this.state = {
       expandLevel: 2,
       orgTree: DATA.tree,
-      checkedKeys: [-1],
+      checkedKeys: [240532.1]
     };
   }
-  onExpand = () => {}
-  onCheck = () => {} 
+
+  onExpand = () => {};
+  onCheck = () => {};
+  otherRules = () => {};
   render() {
-    return <Department expandLevel={this.state.expandLevel} treeData={this.state.orgTree} checkedKeys={this.state.checkedKeys} onExpand={this.onExpand} onCheck={this.onCheck} />;
+    return (
+      <Department
+        expandLevel={this.state.expandLevel}
+        treeData={this.state.orgTree}
+        checkedKeys={this.state.checkedKeys}
+        onExpand={this.onExpand}
+        onCheck={this.onCheck}
+        rules={1}
+        otherCheckedRules={this.otherRules}
+      />
+    );
   }
 }
