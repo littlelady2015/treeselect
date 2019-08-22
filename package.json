@@ -1,0 +1,75 @@
+{
+    "name": "ux-treeselect-zhangyurui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "scripts": {
+        "start": "italent-thunder start",
+        "build": "italent-thunder build prod --mode development",
+        "build-prod": "italent-thunder build prod",
+        "lib": "stl build lib",
+        "examples": "sbl start --port 9001",
+        "prepublish": "npm run lib",
+        "commit": "git-cz"
+    },
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git@gitlab.beisencorp.com:ux-code-training/ux-treeselect-zhangyurui.git"
+    },
+    "peerDependencies": {
+        "react": "16.x.x",
+        "react-dom": "16.x.x"
+    },
+    "devDependencies": {
+        "@beisen/babel": "7.x.x",
+        "@beisen/build": "1.x.x",
+        "@beisen/eslint-config-beisenux": "^1.0.4",
+        "@beisen/italent-thunder": "1.x.x",
+        "@beisen/storybook": "1.x.x",
+        "@beisen/storybook-react": "4.x.x",
+        "@beisen/ts": "1.x.x",
+        "@beisen/webpack": "4.x.x",
+        "@commitlint/cli": "^8.1.0",
+        "@commitlint/config-conventional": "^8.1.0",
+        "@talentui/cz-project-changelog": "^1.0.1",
+        "babel-eslint": "^10.0.2",
+        "babel-plugin-import": "^1.12.0",
+        "commitizen": "^2.10.1",
+        "cz-conventional-changelog": "2.x.x",
+        "eslint": "^6.2.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^2.0.1",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.3",
+        "prettier": "^1.18.2",
+        "react": "16.x.x",
+        "react-dom": "16.x.x"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/@talentui/cz-project-changelog"
+        }
+    },
+    "dependencies": {
+        "@beisen-phoenix/checkbox": "^3.0.1-rc.47",
+        "@beisen-phoenix/icon": "^3.0.1-rc.47",
+        "@beisen-phoenix/style-token": "^3.0.1-rc.47",
+        "antd": "^3.21.4",
+        "sass-loader": "^7.2.0"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -e $GIT_PARAMS",
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*.{ts,tsx,js,jsx}": [
+            "eslint --fix",
+            "git add"
+        ]
+    }
+}

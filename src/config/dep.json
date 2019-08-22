@@ -1,0 +1,74 @@
+{
+    "tree": [
+      {
+        "departmentId": -1,
+        "departmentName": "北森Beisen10000222ss",
+        "departmentCode": "",
+        "parentDepartmentId": -2,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": true
+      },
+      {
+        "departmentId": 240532,
+        "departmentName": "技术部",
+        "departmentCode": "15200",
+        "parentDepartmentId": -1,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": true
+      },
+      {
+        "departmentId": 240533,
+        "departmentName": "01",
+        "departmentCode": "15201",
+        "parentDepartmentId": -1,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": false
+      },
+      {
+        "departmentId": 240534,
+        "departmentName": "测试",
+        "departmentCode": "15204",
+        "parentDepartmentId": -1,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": false
+      },
+      {
+        "departmentId": 240532.1,
+        "departmentName": "技术部01",
+        "departmentCode": "15200",
+        "parentDepartmentId": 240532,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": true
+      },
+      {
+        "departmentId": 240532.2,
+        "departmentName": "技术部02",
+        "departmentCode": "15200",
+        "parentDepartmentId": 240532,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": true
+      },
+      {
+        "departmentId": 240532.3,
+        "departmentName": "技术部03",
+        "departmentCode": "15200",
+        "parentDepartmentId": 240532,
+        "departmentStatus": true,
+        "withSubEnable": true,
+        "hasChildrenEnable": true,
+        "hasChildrenDisabled": true
+      }
+    ]
+}
